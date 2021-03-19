@@ -25,3 +25,4 @@ crayons-*.tar
 
 # Temporary files for e.g. tests
 /tmp
+native/*/target*/

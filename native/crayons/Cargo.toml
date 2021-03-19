@@ -1,0 +1,24 @@
+[package]
+name = "crayons-nif"
+version = "0.1.0"
+authors = [
+	"myrrlyn <self@myrrlyn.dev>",
+]
+edition = "2018"
+
+[lib]
+name = "crayons_nif"
+path = "src/lib.rs"
+crate-type = ["dylib"]
+
+[dependencies]
+rustler = "0.21.1"
+lazy_static = "1.0"
+tap = "1"
+
+[dependencies.syntect]
+version = "4"
+default-features = false
+features = [
+	"default-fancy",
+]
